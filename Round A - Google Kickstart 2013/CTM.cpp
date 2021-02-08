@@ -1,3 +1,8 @@
+/* Copyright © 2020 Yee Kay Tan - All Rights Reserved
+ */
+/** The following code only passes provided test Set. However, it returned wrong answer
+for Test Set 2 */
+
 #include <iostream>
 #include <vector>
 using namespace std;
