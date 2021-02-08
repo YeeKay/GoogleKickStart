@@ -1,3 +1,6 @@
+/* Copyright © 2020 Yee Kay Tan - All Rights Reserved
+ */
+
 import sys
 T=int (input())
 for x in range (1, T + 1):
