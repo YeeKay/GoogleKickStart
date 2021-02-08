@@ -1,3 +1,8 @@
+/* Copyright © 2020 Yee Kay Tan - All Rights Reserved
+ */
+/** The following code only passes Test Set 1. However, it returned wrong answer
+for Test Set 2 */ 
+
 #include <iostream>
 #include <fstream>
 #include <algorithm>
@@ -6,9 +11,10 @@
 #include <math.h>
 #include <map>
 using namespace std;
-
+//map<index,element> tree
 static map<int,pair<int,int>> tree;
 
+//Find nth element of the array 
 pair<int,int> helper(map<int,pair<int,int>> tree, int pos)
 {
     auto it=tree.find(pos);
@@ -45,14 +51,17 @@ int main()
 {
     int num,id,pos,p,q;
     pair<int,int> root;
+    //initialize root 
     root.first=1;
     root.second=1;
+    //tree nodes
     tree.insert({1,root});
     int a ,b;
     cin >> num;
     for (int i=1;i<=num;i++)
     {
-        cin >> id;       
+        cin >> id; 
+        //Problem ID 1: Find nth element of array 
         if (id ==1)
         {
             pair<int,int>ans;
@@ -62,6 +71,7 @@ int main()
             q=ans.second;
             cout <<  "Case #" <<i <<": " <<p << " " << q << "\n";
         }
+        // Problem ID 2: Find position of p/q in array 
         else
         {
             vector<int32_t> parents;
