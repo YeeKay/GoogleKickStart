@@ -1,3 +1,6 @@
+/* Copyright © 2020 Yee Kay Tan - All Rights Reserved
+ */
+/** The following code passes Test Set 1 and Test Set 2 */ 
 import numpy as np
 import sys
 def check_column_row(matrix,dimension):
